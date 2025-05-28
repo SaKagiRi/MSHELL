@@ -6,11 +6,23 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 05:04:28 by knakto            #+#    #+#             */
-/*   Updated: 2025/04/29 19:09:21 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/28 21:19:53 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "builtin.h"
+#include "exit.h"
+
+static void	check_before_add_env(char **temp)
+{
+	if (temp[0] && temp[1] && (ft_isalpha(temp[1][0]) || temp[1][0] == '_'))
+		add_env(temp[0], temp[1]);
+	else
+	{
+		pnf_fd(2, "bash: export: `%s': not a valid identifier\n", temp[1]);
+		*get_code() = 1;
+	}
+}
 
 void	set_export(char **arg)
 {
@@ -31,7 +43,7 @@ void	set_export(char **arg)
 				free(sub);
 			}
 			else
-				add_env(temp[0], temp[1]);
+				check_before_add_env(temp);
 			free_split(temp);
 		}
 		else

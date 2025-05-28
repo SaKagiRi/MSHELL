@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 04:31:01 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/28 17:47:11 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/28 21:07:55 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,9 @@ bool	is_in_s_quote(char c);
 bool	is_expand(char *line);
 char	*join_line(void);
 void	clear_expand(char **line, char *temp);
+bool	check_quote(char c);
+void	init_check_quote(void);
+void	init_check_double_quote(void);
+bool	check_double_quote(char c);
 
 #endif

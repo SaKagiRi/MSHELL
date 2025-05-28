@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 21:00:45 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/28 17:56:49 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/28 21:26:15 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,54 +67,64 @@ void	add_word(char *line, int point, int len)
 void	use_expand(void)
 {
 	t_word	*word;
-	bool	d_q;
-	bool	s_q;
 	int		i;
 
 	word = *get_t_word();
-	d_q = false;
-	s_q = false;
+	init_check_double_quote();
 	while (word)
 	{
-		i = 0;
-		while (word->word[i])
-		{
-			if (word->word[i] == '\'' && !d_q)
-				s_q = !s_q;
-			if (word->word[i] == '"' && !s_q)
-				d_q = !d_q;
-			i++;
-		}
-		if (word->word[0] == '$' && !s_q)
+		i = -1;
+		while (word->word[++i])
+			check_double_quote(word->word[i]);
+		if (word->word[0] == '$' && check_double_quote(word->word[0]) \
+&& word->word[1] && word->word[1] != '\'' && word->word[1] != '"')
 			word->expand = get_value(&word->word[1]);
 		word = word->next;
 	}
 }
 
+static bool	sub_fnc_expand(char *line, int *before, int *i)
+{
+	add_word(line, *before, *i - *before);
+	*before = *i;
+	pnf("1-->%d, %d\n", *before, *i);
+	*i += len_expand(&line[*i]);
+	if (!line[*i])
+		return (false);
+	pnf("2-->%d, %d\n", *before, *i);
+	add_word(line, *before, *i - *before);
+	*before = *i;
+	pnf("3-->%d, %d\n", *before, *i);
+	return (true);
+}
+
+/*
+ * logic
+ * - while loop string if find $ must len use "alnum alpha and _"
+ * and split all with "sub_fnc_expand" it use for add word before expand
+ * add word expand($) and check have any word after expand? if have
+ * just add more word after that
+ * - two facter if dont have any $ must copy all line
+ * - and copy again??, but it fine just work I dont wanna tuch it
+ * I have idea to do this long time ago.
+ * - use_expand have for change word $A to A and after all expland_line
+ * just use join line to join none expand and expand
+*/
 void	expand_word(char *line)
 {
 	int		before;
 	int		i;
 
-	i = 0;
+	i = -1;
 	before = 0;
-	while (line[i])
+	while (line[++i])
 	{
 		if (is_expand(&line[i]))
-		{
-			add_word(line, before, i - before);
-			before = i;
-			i += len_expand(&line[i]);
-			if (!line[i])
+			if (!sub_fnc_expand(line, &before, &i))
 				break ;
-			add_word(line, before, i - before);
-			before = i;
-		}
-		else if (is_in_s_quote(line[i]) && !ft_strchr(&line[i], '$'))
+		if (is_in_s_quote(line[i]) && !ft_strchr(&line[i], '$'))
 			add_word(line, before, -1);
-		i++;
 	}
-	if (i - before > 1)
-		add_word(line, before, -1);
+	sub_fnc_expand(line, &before, &i);
 	use_expand();
 }
