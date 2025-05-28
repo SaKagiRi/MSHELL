@@ -6,7 +6,7 @@
 /*   By: gyeepach <gyeepach@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 06:01:47 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/25 20:25:32 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/26 00:42:51 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -272,7 +272,8 @@
 // 	}
 // }
 
-#include "../stupid_parser/s_parser.h"
+// #include "../stupid_parser/s_parser.h"
+# include "parser.h"
 void	prompt(void)
 {
 	char	*line;
@@ -282,8 +283,9 @@ void	prompt(void)
 		line = readline("minishell> ");
 		if (!line)
 			break ;
-		if (s_parser(&line))
-			process();
+		// if (s_parser(&line))
+		// 	process();
+		parser(line);
 		add_history(line);
 		free(line);
 		// break ;
@@ -305,11 +307,12 @@ void	prompt(void)
 // NOTE: 
 int	main(int c, char **v, char **envp)
 {
+	char	*line;
 	// *env() = envp;
 	init_env(envp);
 	// print_env();
 	// line = ft_strdup(v[1]);
-	// s_parser(&line);
+	// parser(line);
 	// free(line);
 	prompt();
 	// get_cmd("cd ..");

@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 04:31:01 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/05 23:58:06 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/25 20:50:40 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define EXPAND_H
 
 # include "../../../lib/KML/include/kml.h"
-# include "../../environment_variables/env.h"
+# include "env.h"
 # include <limits.h>
 
 typedef struct s_word

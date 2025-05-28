@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/04 23:34:32 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/12 07:24:19 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/25 20:51:18 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdbool.h>
 # include "syntax/syntax.h"
 # include "expand/expand.h"
-# include "../process/process.h"
+# include "process.h"
 # include "export/export.h"
 
 typedef enum e_type

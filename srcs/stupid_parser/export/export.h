@@ -6,14 +6,14 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 06:41:10 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/12 07:27:27 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/25 20:50:47 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef EXPORT_H
 # define EXPORT_H
 
-# include "../../process/process.h"
+# include "process.h"
 
 t_redirect	*new_redirect(char *value, t_redirect_type type);
 t_process	*new_proc(char **cmd, t_redirect *re);

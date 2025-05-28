@@ -1,0 +1,1521 @@
+[
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/digit/ft_atoi.o",
+      "srcs/digit/ft_atoi.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/digit/ft_atoi.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/digit/ft_atoi.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/digit/ft_atol.o",
+      "srcs/digit/ft_atol.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/digit/ft_atol.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/digit/ft_atol.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/digit/ft_htol.o",
+      "srcs/digit/ft_htol.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/digit/ft_htol.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/digit/ft_htol.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/ft_itoa.o",
+      "srcs/string/ft_itoa.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_itoa.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_itoa.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/ft_split.o",
+      "srcs/string/ft_split.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_split.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_split.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/ft_strlen.o",
+      "srcs/string/ft_strlen.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strlen.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strlen.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/ft_strchr.o",
+      "srcs/string/ft_strchr.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strchr.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strchr.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/ft_strdup.o",
+      "srcs/string/ft_strdup.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strdup.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strdup.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/ft_substr.o",
+      "srcs/string/ft_substr.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_substr.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_substr.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/ft_strlcpy.o",
+      "srcs/string/ft_strlcpy.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strlcpy.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strlcpy.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/ft_strlcat.o",
+      "srcs/string/ft_strlcat.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strlcat.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strlcat.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/ft_strmapi.o",
+      "srcs/string/ft_strmapi.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strmapi.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strmapi.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/ft_strncmp.o",
+      "srcs/string/ft_strncmp.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strncmp.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strncmp.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/ft_strnstr.o",
+      "srcs/string/ft_strnstr.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strnstr.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strnstr.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/ft_strrchr.o",
+      "srcs/string/ft_strrchr.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strrchr.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strrchr.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/ft_strjoin.o",
+      "srcs/string/ft_strjoin.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strjoin.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strjoin.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/ft_strtrim.o",
+      "srcs/string/ft_strtrim.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strtrim.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_strtrim.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/ft_striteri.o",
+      "srcs/string/ft_striteri.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_striteri.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/ft_striteri.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/fsplit.o",
+      "srcs/string/fsplit.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/fsplit.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/fsplit.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/fjoin.o",
+      "srcs/string/fjoin.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/fjoin.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/fjoin.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/character/ft_isalnum.o",
+      "srcs/character/ft_isalnum.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/character/ft_isalnum.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/character/ft_isalnum.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/character/ft_isalpha.o",
+      "srcs/character/ft_isalpha.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/character/ft_isalpha.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/character/ft_isalpha.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/character/ft_isascii.o",
+      "srcs/character/ft_isascii.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/character/ft_isascii.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/character/ft_isascii.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/character/ft_isdigit.o",
+      "srcs/character/ft_isdigit.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/character/ft_isdigit.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/character/ft_isdigit.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/character/ft_isprint.o",
+      "srcs/character/ft_isprint.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/character/ft_isprint.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/character/ft_isprint.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/character/ft_toupper.o",
+      "srcs/character/ft_toupper.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/character/ft_toupper.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/character/ft_toupper.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/character/ft_tolower.o",
+      "srcs/character/ft_tolower.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/character/ft_tolower.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/character/ft_tolower.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/character/ft_isspace.o",
+      "srcs/character/ft_isspace.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/character/ft_isspace.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/character/ft_isspace.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/memory/ft_bzero.o",
+      "srcs/memory/ft_bzero.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/memory/ft_bzero.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/memory/ft_bzero.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/memory/ft_memset.o",
+      "srcs/memory/ft_memset.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/memory/ft_memset.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/memory/ft_memset.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/memory/ft_memcpy.o",
+      "srcs/memory/ft_memcpy.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/memory/ft_memcpy.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/memory/ft_memcpy.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/memory/ft_memchr.o",
+      "srcs/memory/ft_memchr.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/memory/ft_memchr.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/memory/ft_memchr.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/memory/ft_memcmp.o",
+      "srcs/memory/ft_memcmp.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/memory/ft_memcmp.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/memory/ft_memcmp.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/memory/ft_calloc.o",
+      "srcs/memory/ft_calloc.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/memory/ft_calloc.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/memory/ft_calloc.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/memory/ft_memmove.o",
+      "srcs/memory/ft_memmove.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/memory/ft_memmove.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/memory/ft_memmove.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/memory/ft_malloc.o",
+      "srcs/memory/ft_malloc.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/memory/ft_malloc.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/memory/ft_malloc.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/print/ft_putstr_fd.o",
+      "srcs/print/ft_putstr_fd.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/print/ft_putstr_fd.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/print/ft_putstr_fd.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/print/ft_putnbr_fd.o",
+      "srcs/print/ft_putnbr_fd.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/print/ft_putnbr_fd.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/print/ft_putnbr_fd.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/print/ft_putchar_fd.o",
+      "srcs/print/ft_putchar_fd.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/print/ft_putchar_fd.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/print/ft_putchar_fd.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/print/ft_putendl_fd.o",
+      "srcs/print/ft_putendl_fd.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/print/ft_putendl_fd.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/print/ft_putendl_fd.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/print/ft_printf.o",
+      "srcs/print/ft_printf.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/print/ft_printf.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/print/ft_printf.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/print/ft_printf_fd.o",
+      "srcs/print/ft_printf_fd.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/print/ft_printf_fd.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/print/ft_printf_fd.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/print/get_t.o",
+      "srcs/print/get_t.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/print/get_t.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/print/get_t.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/linked_list/ft_lstmap.o",
+      "srcs/linked_list/ft_lstmap.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstmap.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstmap.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/linked_list/ft_lstnew.o",
+      "srcs/linked_list/ft_lstnew.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstnew.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstnew.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/linked_list/ft_lstsize.o",
+      "srcs/linked_list/ft_lstsize.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstsize.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstsize.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/linked_list/ft_lstiter.o",
+      "srcs/linked_list/ft_lstiter.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstiter.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstiter.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/linked_list/ft_lstlast.o",
+      "srcs/linked_list/ft_lstlast.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstlast.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstlast.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/linked_list/ft_lstclear.o",
+      "srcs/linked_list/ft_lstclear.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstclear.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstclear.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/linked_list/ft_lstdelone.o",
+      "srcs/linked_list/ft_lstdelone.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstdelone.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstdelone.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/linked_list/ft_lstadd_back.o",
+      "srcs/linked_list/ft_lstadd_back.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstadd_back.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstadd_back.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/linked_list/ft_lstadd_front.o",
+      "srcs/linked_list/ft_lstadd_front.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstadd_front.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstadd_front.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/linked_list/ft_lstiter_if.o",
+      "srcs/linked_list/ft_lstiter_if.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstiter_if.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstiter_if.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/linked_list/ft_lstfind.o",
+      "srcs/linked_list/ft_lstfind.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstfind.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstfind.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/linked_list/ft_lstremove_if.o",
+      "srcs/linked_list/ft_lstremove_if.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstremove_if.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/linked_list/ft_lstremove_if.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/get_next_line/get_next_line.o",
+      "srcs/string/get_next_line/get_next_line.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/get_next_line/get_next_line.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/get_next_line/get_next_line.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "srcs/string/get_next_line/get_next_line_utils.o",
+      "srcs/string/get_next_line/get_next_line_utils.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH/lib/KML",
+    "file": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/get_next_line/get_next_line_utils.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/lib/KML/srcs/string/get_next_line/get_next_line_utils.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/main/minishell.o",
+      "srcs/main/minishell.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/main/minishell.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/main/minishell.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/environment_variables/get_t.o",
+      "srcs/environment_variables/get_t.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/get_t.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/get_t.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/environment_variables/env_new.o",
+      "srcs/environment_variables/env_new.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/env_new.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/env_new.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/environment_variables/init_env.o",
+      "srcs/environment_variables/init_env.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/init_env.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/init_env.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/environment_variables/print_env.o",
+      "srcs/environment_variables/print_env.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/print_env.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/print_env.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/environment_variables/set_env.o",
+      "srcs/environment_variables/set_env.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/set_env.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/set_env.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/environment_variables/add_env.o",
+      "srcs/environment_variables/add_env.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/add_env.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/add_env.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/environment_variables/del_env.o",
+      "srcs/environment_variables/del_env.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/del_env.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/del_env.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/environment_variables/clear_env.o",
+      "srcs/environment_variables/clear_env.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/clear_env.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/clear_env.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/environment_variables/get_value_env.o",
+      "srcs/environment_variables/get_value_env.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/get_value_env.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/environment_variables/get_value_env.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/builtin/ft_chdir.o",
+      "srcs/builtin/ft_chdir.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/builtin/ft_chdir.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/builtin/ft_chdir.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/builtin/builtin.o",
+      "srcs/builtin/builtin.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/builtin/builtin.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/builtin/builtin.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/builtin/ft_echo.o",
+      "srcs/builtin/ft_echo.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/builtin/ft_echo.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/builtin/ft_echo.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/builtin/ft_pwd.o",
+      "srcs/builtin/ft_pwd.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/builtin/ft_pwd.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/builtin/ft_pwd.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/builtin/ft_env.o",
+      "srcs/builtin/ft_env.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/builtin/ft_env.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/builtin/ft_env.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/builtin/ft_export.o",
+      "srcs/builtin/ft_export.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/builtin/ft_export.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/builtin/ft_export.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/builtin/ft_unset.o",
+      "srcs/builtin/ft_unset.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/builtin/ft_unset.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/builtin/ft_unset.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/builtin/ft_exit.o",
+      "srcs/builtin/ft_exit.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/builtin/ft_exit.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/builtin/ft_exit.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/exit/exit.o",
+      "srcs/exit/exit.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/exit/exit.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/exit/exit.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/exit/get_t.o",
+      "srcs/exit/get_t.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/exit/get_t.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/exit/get_t.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/process/heredoc.o",
+      "srcs/process/heredoc.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/process/heredoc.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/process/heredoc.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/process/redirect.o",
+      "srcs/process/redirect.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/process/redirect.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/process/redirect.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/process/clear.o",
+      "srcs/process/clear.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/process/clear.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/process/clear.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/process/get_t.o",
+      "srcs/process/get_t.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/process/get_t.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/process/get_t.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/process/process.o",
+      "srcs/process/process.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/process/process.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/process/process.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/process/builtin_control.o",
+      "srcs/process/builtin_control.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/process/builtin_control.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/process/builtin_control.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/process/exec/exec.o",
+      "srcs/process/exec/exec.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/process/exec/exec.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/process/exec/exec.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/process/exec/clear.o",
+      "srcs/process/exec/clear.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/process/exec/clear.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/process/exec/clear.o"
+  },
+  {
+    "arguments": [
+      "/nix/store/c6mlpw8bb0n9rc38hihmy0zzc1w81ljr-clang-wrapper-18.1.8/bin/cc",
+      "-g3",
+      "-c",
+      "-I",
+      "./include",
+      "-I",
+      "./lib/KML/include",
+      "-o",
+      "srcs/process/exec/access.o",
+      "srcs/process/exec/access.c"
+    ],
+    "directory": "/home/knakto/knakto/core-loop/MSH",
+    "file": "/home/knakto/knakto/core-loop/MSH/srcs/process/exec/access.c",
+    "output": "/home/knakto/knakto/core-loop/MSH/srcs/process/exec/access.o"
+  }
+]

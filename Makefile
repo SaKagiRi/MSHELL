@@ -5,7 +5,7 @@ HEADER		= -I ./include -I $(LIBFT_DIR)/include
 #------------[FLAGS]
 CFLAGS		= $(DEBUG_FLAGS) $(W_FLAGS) $(ALL_DEBUG)
 DEBUG_FLAGS	= -g3 -lreadline
-ALL_DEBUG	= 
+ALL_DEBUG	= -DDEBUG_PARSER=1 #-DDEBUG_EXPAND=1
 W_FLAGS		= #-Wall -Wextra -Werror
 #------------[LIBRARY]
 LIBFT_DIR	= ./lib/KML
@@ -14,16 +14,20 @@ LIBFT_FILE	= $(LIBFT_DIR)/kml.a
 SRC			= $(addprefix srcs/, $(FILE))
 OBJ			= $(SRC:.c=.o)
 #------------[ROOT_FILES]
-FILE		= $(MAIN) $(INIT) $(ENV) $(BUILTIN) $(EXIT) $(PROCESS)
+FILE		= $(MAIN) $(INIT) $(ENV) $(BUILTIN) $(EXIT) $(PROCESS) $(PARSER)
 #------------[SUBFILES]
 #------------[MAIN]
 MAIN			= $(addprefix $(MAIN_PATH)/, $(MAIN_FILE))
 MAIN_PATH		= main
-MAIN_FILE		= minishell.c get_t.c signal_bind.c
+MAIN_FILE		= minishell.c
 #------------[PARSER]
-PARSER			= $(addprefix $(PARSER_PATH)/, $(PARSER_FILE))
+PARSER			= $(addprefix $(PARSER_PATH)/, $(PARSER_FILE)) $(EXPAND)
 PARSER_PATH		= parser
-PARSER_FILE		= extract.c extract_utils.c extract_utils2.c 
+PARSER_FILE		= parser.c syntax.c lexer.c split_space.c split_pipe.c quote_check.c quote_double_check.c split_redirect.c split_redirect_fnc.c type_redirect.c expand.c
+#------------[EXPAND]
+EXPAND			= $(addprefix $(EXPAND_PATH)/, $(EXPAND_FILE))
+EXPAND_PATH		= $(PARSER_PATH)/expand
+EXPAND_FILE		= expand.c check.c clear.c expand_word.c get_t.c join_line.c
 #------------[PROCESSUTION]
 PROCESS			= $(addprefix $(PROCESS_PATH)/, $(PROCESS_FILE)) $(EXEC)
 PROCESS_PATH		= process
@@ -44,26 +48,6 @@ ENV_FILE		= get_t.c env_new.c init_env.c print_env.c set_env.c add_env.c del_env
 EXIT			= $(addprefix $(EXIT_PATH)/, $(EXIT_FILE))
 EXIT_PATH		= exit
 EXIT_FILE		= exit.c get_t.c
-#------------[STUPID_PARSER]
-STUPID_PARSER		= $(addprefix $(STUPID_PARSER_PATH)/, $(STUPID_PARSER_FILE)) $(SYNTAX) $(EXPAND) $(UNQUOTE) $(EXPORT_TO_EXEC)
-STUPID_PARSER_PATH	= stupid_parser
-STUPID_PARSER_FILE	= parser.c cut_word.c clear.c debug.c
-	#------------[SYNTAX]
-	SYNTAX				= $(addprefix $(SYNTAX_PATH)/, $(SYNTAX_FILE))
-	SYNTAX_PATH			= $(STUPID_PARSER_PATH)/syntax
-	SYNTAX_FILE			= check_quote.c check_pipe.c syntax.c check_redirect.c
-	#------------[EXPAND]
-	EXPAND				= $(addprefix $(EXPAND_PATH)/, $(EXPAND_FILE))
-	EXPAND_PATH			= $(STUPID_PARSER_PATH)/expand
-	EXPAND_FILE			= clear.c expand.c get_t.c expand_word.c check.c join_line.c
-	#------------[UNQUOTE]
-	UNQUOTE				= $(addprefix $(UNQUOTE_PATH)/, $(UNQUOTE_FILE))
-	UNQUOTE_PATH			= $(STUPID_PARSER_PATH)/unquote
-	UNQUOTE_FILE			= checktype.c ft_unquote_lst.c unquote.c debug.c
-	#------------[EXPORT_TO_EXEC]
-	EXPORT_TO_EXEC				= $(addprefix $(EXPORT_TO_EXEC_PATH)/, $(EXPORT_TO_EXEC_FILE))
-	EXPORT_TO_EXEC_PATH			= $(STUPID_PARSER_PATH)/export
-	EXPORT_TO_EXEC_FILE			= debug.c export_to_execute.c new_list.c
 #------------[PROCESS]
 all: lib $(NAME)
 $(NAME): $(OBJ) | $(BUILD_DIR)
