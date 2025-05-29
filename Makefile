@@ -23,7 +23,7 @@ MAIN_FILE		= minishell.c
 #------------[PARSER]
 PARSER			= $(addprefix $(PARSER_PATH)/, $(PARSER_FILE)) $(EXPAND)
 PARSER_PATH		= parser
-PARSER_FILE		= parser.c syntax.c lexer.c split_space.c split_pipe.c quote_check.c quote_double_check.c split_redirect.c split_redirect_fnc.c type_redirect.c expand.c
+PARSER_FILE		= parser.c syntax.c lexer.c split_space.c split_pipe.c quote_check.c quote_double_check.c split_redirect.c split_redirect_fnc.c type_redirect.c expand.c unquote.c
 #------------[EXPAND]
 EXPAND			= $(addprefix $(EXPAND_PATH)/, $(EXPAND_FILE))
 EXPAND_PATH		= $(PARSER_PATH)/expand

@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/25 22:09:37 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/28 17:47:22 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/29 08:55:15 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,5 +85,6 @@ void	append_pipe_type(t_list **token);
 void	init_check_double_quote(void);
 bool	check_double_quote(char c);
 void	expand(t_list *token);
+void	unquote(t_list **token);
 
 #endif
