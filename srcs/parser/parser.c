@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/25 22:10:01 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/29 11:33:46 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/29 15:13:24 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,5 +105,6 @@ bool	parser(char *line)
 	parser_to_execution(token);
 	ft_lstclear(&token, clear_token);
 	print_proc();
+	free(line);
 	return (true);
 }

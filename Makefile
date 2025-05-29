@@ -3,7 +3,7 @@ NAME		= minishell
 CC			= cc
 HEADER		= -I ./include -I $(LIBFT_DIR)/include
 #------------[FLAGS]
-CFLAGS		= $(DEBUG_FLAGS) $(W_FLAGS) #$(ALL_DEBUG)
+CFLAGS		= $(DEBUG_FLAGS) $(W_FLAGS) $(ALL_DEBUG)
 DEBUG_FLAGS	= -g3 -lreadline
 ALL_DEBUG	= -DDEBUG_PARSER=1 -DDEBUG_EXPAND=1 -DDEBUG_PROCESS=1
 W_FLAGS		= #-Wall -Wextra -Werror
