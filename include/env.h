@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 02:22:59 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/25 20:48:42 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/29 14:37:46 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ typedef struct s_env
 {
 	char			*key;
 	char			*value;
+	int				index;
 	struct s_env	*next;
 }	t_env;
 
@@ -40,5 +41,7 @@ void	del(t_env *d);
 void	clear_env(void);
 char	*get_value(char *key);
 int		*minishell_pid(void);
+int		ft_strcmp(char *s1, char *s2);
+int		len_env();
 
 #endif

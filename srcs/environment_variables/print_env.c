@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 03:03:40 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/05 07:30:55 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/29 14:41:05 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,27 +21,42 @@ void	print_env(void)
 		pnf("%s\n", env()[0][i++]);
 }
 
-static void	print(t_env	*env)
+static void	sub_fnc(t_env *low, int *i)
 {
-	if (env->value)
+	if (low->value)
 	{
-		if (!*env->value)
-			pnf("declare -x %s=\n", env->key);
+		if (!*low->value)
+			pnf("declare -x %s=\n", low->key);
 		else
-			pnf("declare -x %s=%s\n", env->key, env->value);
+			pnf("declare -x %s=\"%s\"\n", low->key, low->value);
 	}
 	else
-		pnf("declare -x %s\n", env->key);
+		pnf("declare -x %s\n", low->key);
+	low->index = 1;
+	*i += 1;
 }
 
 void	print_env_list(void)
 {
+	int		total;
 	t_env	*env;
+	t_env	*low;
+	int		i;
 
-	env = *get_t_env();
-	while (env)
+	total = len_env();
+	i = 0;
+	while (i < total)
 	{
-		print(env);
-		env = env->next;
+		env = *get_t_env();
+		low = NULL;
+		while (env)
+		{
+			if (env->index == -1)
+				if (!low || ft_strcmp(env->key, low->key) < 0)
+					low = env;
+			env = env->next;
+		}
+		if (low)
+			sub_fnc(low, &i);
 	}
 }

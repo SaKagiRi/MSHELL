@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 21:00:45 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/28 21:26:15 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/29 11:46:26 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,14 +87,11 @@ static bool	sub_fnc_expand(char *line, int *before, int *i)
 {
 	add_word(line, *before, *i - *before);
 	*before = *i;
-	pnf("1-->%d, %d\n", *before, *i);
 	*i += len_expand(&line[*i]);
 	if (!line[*i])
 		return (false);
-	pnf("2-->%d, %d\n", *before, *i);
 	add_word(line, *before, *i - *before);
 	*before = *i;
-	pnf("3-->%d, %d\n", *before, *i);
 	return (true);
 }
 

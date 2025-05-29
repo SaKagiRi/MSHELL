@@ -6,20 +6,20 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 05:04:28 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/28 21:19:53 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/29 11:49:44 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "builtin.h"
 #include "exit.h"
 
-static void	check_before_add_env(char **temp)
+static void	check_before_add_env(char *name, char *value)
 {
-	if (temp[0] && temp[1] && (ft_isalpha(temp[1][0]) || temp[1][0] == '_'))
-		add_env(temp[0], temp[1]);
+	if (name && (ft_isalpha(name[0]) || name[0] == '_'))
+		add_env(name, value);
 	else
 	{
-		pnf_fd(2, "bash: export: `%s': not a valid identifier\n", temp[1]);
+		pnf_fd(2, "bash: export: `%s': not a valid identifier\n", name);
 		*get_code() = 1;
 	}
 }
@@ -43,11 +43,11 @@ void	set_export(char **arg)
 				free(sub);
 			}
 			else
-				check_before_add_env(temp);
+				check_before_add_env(temp[0], temp[1]);
 			free_split(temp);
 		}
 		else
-			add_env(arg[i], NULL);
+			check_before_add_env(arg[i], NULL);
 		i++;
 	}
 }
