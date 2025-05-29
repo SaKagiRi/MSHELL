@@ -5,7 +5,7 @@ HEADER		= -I ./include -I $(LIBFT_DIR)/include
 #------------[FLAGS]
 CFLAGS		= $(DEBUG_FLAGS) $(W_FLAGS) $(ALL_DEBUG)
 DEBUG_FLAGS	= -g3 -lreadline
-ALL_DEBUG	= -DDEBUG_PARSER=1 -DDEBUG_EXPAND=1
+ALL_DEBUG	= -DDEBUG_PARSER=1 -DDEBUG_EXPAND=1 -DDEBUG_PROCESS=1
 W_FLAGS		= #-Wall -Wextra -Werror
 #------------[LIBRARY]
 LIBFT_DIR	= ./lib/KML
@@ -23,7 +23,7 @@ MAIN_FILE		= minishell.c
 #------------[PARSER]
 PARSER			= $(addprefix $(PARSER_PATH)/, $(PARSER_FILE)) $(EXPAND)
 PARSER_PATH		= parser
-PARSER_FILE		= parser.c syntax.c lexer.c split_space.c split_pipe.c quote_check.c quote_double_check.c split_redirect.c split_redirect_fnc.c type_redirect.c expand.c unquote.c
+PARSER_FILE		= parser.c syntax.c lexer.c split_space.c split_pipe.c quote_check.c quote_double_check.c split_redirect.c split_redirect_fnc.c type_redirect.c expand.c unquote.c create_proc_struct.c
 #------------[EXPAND]
 EXPAND			= $(addprefix $(EXPAND_PATH)/, $(EXPAND_FILE))
 EXPAND_PATH		= $(PARSER_PATH)/expand
@@ -31,7 +31,7 @@ EXPAND_FILE		= expand.c check.c clear.c expand_word.c get_t.c join_line.c
 #------------[PROCESSUTION]
 PROCESS			= $(addprefix $(PROCESS_PATH)/, $(PROCESS_FILE)) $(EXEC)
 PROCESS_PATH		= process
-PROCESS_FILE		= heredoc.c redirect.c clear.c get_t.c process.c builtin_control.c
+PROCESS_FILE		= heredoc.c redirect.c clear.c get_t.c process.c builtin_control.c debug.c
 	#------------[EXECUTION]
 	EXEC			= $(addprefix $(EXEC_PATH)/, $(EXEC_FILE))
 	EXEC_PATH		= $(PROCESS_PATH)/exec

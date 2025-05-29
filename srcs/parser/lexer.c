@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/25 23:57:03 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/29 08:55:40 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/29 09:28:36 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,8 +76,4 @@ void	lexer(t_list **token, char *line)
 	split_pipe(token);
 	append_pipe_type(token);
 	split_redirect(token);
-	expand(*token);
-	unquote(token);
-	print_word(*token);
-	ft_lstclear(token, clear_token);
 }

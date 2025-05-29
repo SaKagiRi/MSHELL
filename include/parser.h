@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/25 22:09:37 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/29 08:55:15 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/29 10:12:03 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,13 @@ typedef struct s_token
 }	t_token;
 
 /*
+ * logic
+ * - check syntax
+ * - lexer ->> split word by word and check append type
+ * - expand
+ * - unquote
+ * - parser to execution struct
+ *
  * check all parser and return true or false
  *
  * return value
@@ -86,5 +93,9 @@ void	init_check_double_quote(void);
 bool	check_double_quote(char c);
 void	expand(t_list *token);
 void	unquote(t_list **token);
+void	print_word(t_list *token);
+void	addback_proc(char **cmd, t_redirect *re);
+void	addback_re(t_redirect **re, t_token *op, t_token *value);
+void	init_porc();
 
 #endif

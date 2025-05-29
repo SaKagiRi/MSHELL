@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 18:57:58 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/25 22:09:01 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/29 10:26:53 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,6 +89,7 @@ void		redirect(t_process *proc);
 void		process(void);
 int			builtin(t_process *proc);
 int			check_builtin(t_process *proc);
+void		print_proc();
 
 # define HEREDOC_ERR "\nbash: warning: here-document at line delimited \
 by end-of-file (wanted `%s')\n"

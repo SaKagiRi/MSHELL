@@ -6,7 +6,7 @@
 /*   By: gyeepach <gyeepach@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 06:01:47 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/29 08:44:11 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/29 11:34:28 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -283,11 +283,11 @@ void	prompt(void)
 		line = readline("minishell> ");
 		if (!line)
 			break ;
-		// if (s_parser(&line))
-		// 	process();
-		parser(line);
+		if (parser(line))
+			process();
 		add_history(line);
 		free(line);
+		clear_t_process();
 		// break ;
 	}
 	rl_clear_history();
@@ -304,7 +304,10 @@ void	prompt(void)
 // -finish some leak and big error of memory
 // -finish shell level in almost all case (dont have grep case and I dont do it lol)
 // -check norm and push update this day
-// NOTE: 
+// NOTE: day 25/5 - 29/5 11.25 Update
+// - after 4 day I doing parser and now I finish parser to execute struct
+// and not leak ok after all I have only one process is a "signal" todo before
+// try to submit
 int	main(int c, char **v, char **envp)
 {
 	char	*line;
