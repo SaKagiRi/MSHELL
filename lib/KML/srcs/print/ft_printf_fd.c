@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/06 23:04:01 by knakto            #+#    #+#             */
-/*   Updated: 2025/04/11 04:20:19 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/29 16:04:23 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,7 @@ int	pnf_fd(int fd, const char *str, ...)
 		if (*str == '%')
 			temp = ft_check(*++str, arg);
 		else
-			temp = write(1, str, 1);
+			temp = write(*get_fd(), str, 1);
 		if (len == -1)
 			return (-1);
 		len += temp;

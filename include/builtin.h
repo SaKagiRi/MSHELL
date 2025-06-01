@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 19:22:40 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/25 20:48:36 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/29 17:02:06 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,6 @@ void	ft_export(char **arg);
 void	ft_unset(char **arg);
 void	redirect(t_process *proc);
 void	clear_t_process(void);
-void	ft_exit(t_process *proc);
+void	ft_exit(char **arg);
 
 #endif

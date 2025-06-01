@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 17:11:21 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/04 23:25:49 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/29 16:40:45 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ static void	fd_err(int fd_in, int fd_out, int status, t_redirect *re)
 	{
 		pnf_fd(2, "bash: %s: No such file or directory\n", re->value);
 		clear_t_process();
-		exit(127);
+		exit(1);
 	}
 	else if (status == 2)
 	{
@@ -102,13 +102,13 @@ void	redirect(t_process *proc)
 || !ft_strncmp(proc->cmd[0], "unset", 6) \
 || !ft_strncmp(proc->cmd[0], "exit", 5))
 		status = 0;
-	if (fd_in != 0 && fd_in > 0)
+	if (fd_in > 0)
 	{
 		if (status)
 			dup2(fd_in, 0);
 		close(fd_in);
 	}
-	if (fd_out != 1 && fd_out > 1)
+	if (fd_out > 1)
 	{
 		if (status)
 			dup2(fd_out, 1);

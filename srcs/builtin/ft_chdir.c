@@ -6,11 +6,12 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 19:22:21 by knakto            #+#    #+#             */
-/*   Updated: 2025/04/15 04:14:10 by knakto           ###   ########.fr       */
+/*   Updated: 2025/05/29 16:05:33 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "builtin.h"
+#include "exit.h"
 
 static void	set_old_pwd(char *thispath)
 {
@@ -37,7 +38,10 @@ static void	go_to_home(void)
 		return ;
 	}
 	if (chdir(env()[0][i] + 5) != 0)
+	{
 		pnf("bash: cd: %s: No such file or directory\n", env()[0][i] + 5);
+		*get_code() = 1;
+	}
 	else
 		set_env();
 }
@@ -80,7 +84,10 @@ static void	change_dir(char **arg)
 		nextpath = fjoin(nextpath, arg[1]);
 	}
 	if (chdir(nextpath) != 0)
-		pnf("bash: cd: %s: No such file or directory\n", arg[1]);
+	{
+		pnf_fd(2, "bash: cd: %s: No such file or directory\n", arg[1]);
+		*get_code() = 1;
+	}
 	else
 		set_env();
 	free(nextpath);
@@ -92,7 +99,10 @@ void	ft_chdir(char **arg)
 	if (len_arg(arg) == 1)
 		go_to_home();
 	else if (len_arg(arg) > 2)
+	{
 		pnf_fd(2, "bash: cd: too many arguments\n");
+		*get_code() = 1;
+	}
 	else
 		change_dir(arg);
 }

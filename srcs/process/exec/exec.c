@@ -6,11 +6,12 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 00:21:47 by knakto            #+#    #+#             */
-/*   Updated: 2025/04/27 01:40:04 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/01 13:51:07 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "exec.h"
+#include "sig.h"
 
 bool	chech_eccess(char ***cmd, char *path);
 void	clear_execution_failed(char **cmd, char **env);

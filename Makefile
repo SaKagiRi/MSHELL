@@ -3,7 +3,7 @@ NAME		= minishell
 CC			= cc
 HEADER		= -I ./include -I $(LIBFT_DIR)/include
 #------------[FLAGS]
-CFLAGS		= $(DEBUG_FLAGS) $(W_FLAGS) $(ALL_DEBUG)
+CFLAGS		= $(DEBUG_FLAGS) $(W_FLAGS) #$(ALL_DEBUG)
 DEBUG_FLAGS	= -g3 -lreadline
 ALL_DEBUG	= -DDEBUG_PARSER=1 -DDEBUG_EXPAND=1 -DDEBUG_PROCESS=1
 W_FLAGS		= #-Wall -Wextra -Werror
@@ -14,7 +14,7 @@ LIBFT_FILE	= $(LIBFT_DIR)/kml.a
 SRC			= $(addprefix srcs/, $(FILE))
 OBJ			= $(SRC:.c=.o)
 #------------[ROOT_FILES]
-FILE		= $(MAIN) $(INIT) $(ENV) $(BUILTIN) $(EXIT) $(PROCESS) $(PARSER)
+FILE		= $(MAIN) $(INIT) $(ENV) $(BUILTIN) $(EXIT) $(PROCESS) $(PARSER) $(SIGNAL)
 #------------[SUBFILES]
 #------------[MAIN]
 MAIN			= $(addprefix $(MAIN_PATH)/, $(MAIN_FILE))
@@ -48,6 +48,10 @@ ENV_FILE		= get_t.c env_new.c init_env.c print_env.c set_env.c add_env.c del_env
 EXIT			= $(addprefix $(EXIT_PATH)/, $(EXIT_FILE))
 EXIT_PATH		= exit
 EXIT_FILE		= exit.c get_t.c
+#------------[SIGNAL]
+SIGNAL			= $(addprefix $(SIGNAL_PATH)/, $(SIGNAL_FILE))
+SIGNAL_PATH		= signal
+SIGNAL_FILE		= sig.c
 #------------[PROCESS]
 all: lib $(NAME)
 $(NAME): $(OBJ) | $(BUILD_DIR)
