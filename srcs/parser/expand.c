@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 16:03:17 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/28 21:20:04 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/02 19:36:58 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,8 @@ bool	check_expand(t_token *token)
 || token->word[i + 1] == '_' || token->word[i + 1] == '$' \
 || token->word[i + 1] == '?' || ft_isalnum(token->word[i + 1])))
 				return (true);
-			if (check_quote(token->word[i]) && (token->word[i + 1] == '\'' 
-				|| token->word[i + 1] == '"'))
+			if (check_quote(token->word[i]) && (token->word[i + 1] == '\'' \
+|| token->word[i + 1] == '"'))
 				return (true);
 		}
 		i++;

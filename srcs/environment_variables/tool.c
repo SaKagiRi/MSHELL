@@ -6,13 +6,13 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 14:36:55 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/29 14:37:09 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/02 19:32:05 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "env.h"
 
-int	len_env()
+int	len_env(void)
 {
 	t_env	*env;
 	int		i;

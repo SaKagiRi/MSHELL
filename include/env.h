@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 02:22:59 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/29 14:37:46 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/02 19:38:21 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,6 @@ void	clear_env(void);
 char	*get_value(char *key);
 int		*minishell_pid(void);
 int		ft_strcmp(char *s1, char *s2);
-int		len_env();
+int		len_env(void);
 
 #endif

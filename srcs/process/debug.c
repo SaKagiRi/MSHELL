@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 10:24:46 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/29 11:35:27 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/02 19:39:30 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,12 @@ static void	print_re(t_redirect *re)
 	}
 }
 
-void	print_proc()
+void	print_proc(void)
 {
 	t_process	*proc;
 	t_redirect	*re;
 	int			i;
-	
+
 	proc = *get_t_process();
 	re = NULL;
 	while (proc)
@@ -58,7 +58,7 @@ void	print_proc()
 
 #else
 
-void	print_proc()
+void	print_proc(void)
 {
 }
 

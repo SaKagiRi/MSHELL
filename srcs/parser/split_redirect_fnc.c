@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 01:08:31 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/28 15:54:19 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/02 19:36:29 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ static bool	sub_fnc_start_or_end(int type, int *i, char *str, t_list **node)
 	{
 		if (str[0] == '<' || str[0] == '>')
 		{
-			ft_lstadd_back(node, ft_lstnew(new_token(ft_substr(str, 
-				*i, 1), REDIRECT)));
+			ft_lstadd_back(node, ft_lstnew(new_token(ft_substr(\
+str, *i, 1), REDIRECT)));
 			*i += 1;
 		}
 		return (true);
@@ -38,8 +38,8 @@ static bool	sub_fnc_start_or_end(int type, int *i, char *str, t_list **node)
 		{
 			ft_lstadd_back(node, ft_lstnew(new_token(ft_substr(str, \
 *i, (ft_strlen(str) - 1) - *i), CMD)));
-			ft_lstadd_back(node, ft_lstnew(new_token(ft_substr(str, 
-				ft_strlen(str) - 1, 1), REDIRECT)));
+			ft_lstadd_back(node, ft_lstnew(new_token(ft_substr(\
+str, ft_strlen(str) - 1, 1), REDIRECT)));
 			return (false);
 		}
 		return (true);
@@ -85,8 +85,8 @@ static t_list	*split_token(t_list *token)
 	}
 	i = start;
 	if (sub_fnc_start_or_end(END, &i, str, &node) && str[start])
-		ft_lstadd_back(&node, ft_lstnew(new_token(
-		ft_strdup(&str[start]), CMD)));
+		ft_lstadd_back(&node, ft_lstnew(new_token(\
+ft_strdup(&str[start]), CMD)));
 	ft_lstadd_back(&node, token->next);
 	return (node);
 }

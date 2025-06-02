@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 00:37:28 by knakto            #+#    #+#             */
-/*   Updated: 2025/06/02 19:22:15 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/02 19:38:57 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static int	len_process(void)
 
 static void	run_process(t_process *proc, int sw)
 {
-	int	pipe_fd[2];
+	int			pipe_fd[2];
 	static int	fd = -1;
 
 	pipe(pipe_fd);

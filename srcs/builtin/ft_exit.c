@@ -6,11 +6,17 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 01:41:26 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/29 17:13:39 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/02 19:40:58 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "builtin.h"
+
+static void	error(void)
+{
+	pnf_fd(2, "bash: pwd: too many arguments\n");
+	exit(1);
+}
 
 void	ft_exit(char **cmd)
 {
@@ -24,8 +30,9 @@ void	ft_exit(char **cmd)
 	{
 		status = 0;
 		i = -1;
-		while(cmd[1][++i])
-			if (!(ft_isalnum(cmd[1][i]) || cmd[1][0] == '-' || cmd[1][0] == '+'))
+		while (cmd[1][++i])
+			if (!(ft_isalnum(cmd[1][i]) || cmd[1][0] == '-' \
+|| cmd[1][0] == '+'))
 				status = 1;
 		code = ft_atoi(cmd[1]);
 		if (status)
@@ -37,8 +44,5 @@ void	ft_exit(char **cmd)
 		*get_code() = code;
 	}
 	else
-	{
-		pnf_fd(2, "bash: pwd: too many arguments\n");
-		exit(1);
-	}
+		error();
 }

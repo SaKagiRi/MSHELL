@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 01:08:31 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/28 16:54:02 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/02 19:34:58 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,8 +84,8 @@ static t_list	*split_token(t_list *token)
 	}
 	i = start;
 	if (sub_fnc_start_or_end(END, &i, str, &node) && str[start])
-		ft_lstadd_back(&node, ft_lstnew(new_token(ft_strdup(&str[start]), 
-			CMD)));
+		ft_lstadd_back(&node, ft_lstnew(new_token(ft_strdup(\
+&str[start]), CMD)));
 	ft_lstadd_back(&node, token->next);
 	return (node);
 }

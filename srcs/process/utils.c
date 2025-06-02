@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 19:17:44 by knakto            #+#    #+#             */
-/*   Updated: 2025/06/02 19:21:29 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/02 19:39:46 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ void	sub_fnc_process(t_process *proc, int *fd, int sw, int pipe_fd[2])
 	{
 		if (*fd != -1)
 		{
-			dup2(*fd , 0);
+			dup2(*fd, 0);
 			close(*fd);
 		}
 		if (sw)
