@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 00:37:28 by knakto            #+#    #+#             */
-/*   Updated: 2025/06/01 13:44:33 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/02 19:22:15 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,23 +27,10 @@ static int	len_process(void)
 	return (len);
 }
 
-static int	is_builtin(t_process *proc)
-{
-	if (!ft_strncmp(proc->cmd[0], "echo", 5))
-		return (1);
-	else if (!ft_strncmp(proc->cmd[0], "pwd", 4))
-		return (1);
-	else if (!ft_strncmp(proc->cmd[0], "env", 4))
-		return (1);
-	else if (!ft_strncmp(proc->cmd[0], "export", 7) && !proc->cmd[1])
-		return (1);
-	else
-		return (0);
-}
-
 static void	run_process(t_process *proc, int sw)
 {
 	int	pipe_fd[2];
+	static int	fd = -1;
 
 	pipe(pipe_fd);
 	proc->pid = fork();
@@ -53,21 +40,7 @@ static void	run_process(t_process *proc, int sw)
 		clear_t_process();
 		exit(1);
 	}
-	if (proc->pid == 0)
-	{
-		close(pipe_fd[0]);
-		if (sw)
-			dup2(pipe_fd[1], 1);
-		close(pipe_fd[1]);
-		redirect(proc);
-		if (is_builtin(proc))
-			builtin(proc);
-		exec(proc->cmd, *env());
-	}
-	close(pipe_fd[1]);
-	if (sw)
-		dup2(pipe_fd[0], 0);
-	close(pipe_fd[0]);
+	sub_fnc_process(proc, &fd, sw, pipe_fd);
 }
 
 static void	ft_wait_proc(int all_proc, pid_t last_pid)

@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/25 22:09:37 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/29 10:12:03 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/02 19:30:26 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,6 +96,6 @@ void	unquote(t_list **token);
 void	print_word(t_list *token);
 void	addback_proc(char **cmd, t_redirect *re);
 void	addback_re(t_redirect **re, t_token *op, t_token *value);
-void	init_porc();
+void	init_porc(void);
 
 #endif

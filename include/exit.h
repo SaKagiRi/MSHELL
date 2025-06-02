@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 01:15:16 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/06 23:10:24 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/02 18:55:02 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 
 int		*get_code(void);
+int		*std_in(void);
 bool	is_exit(int num);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: gyeepach <gyeepach@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 06:01:47 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/29 15:32:24 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/02 18:58:39 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -277,12 +277,10 @@
 void	prompt(void)
 {
 	char	*line;
-	int		std_in;
 
-	std_in = dup(0);
 	while (is_exit(0))
 	{
-		dup2(std_in, 0);
+		// dup2(*std_in(), 0);
 		line = readline("minishell> ");
 		if (!line)
 			break ;
@@ -291,6 +289,7 @@ void	prompt(void)
 			process();
 		clear_t_process();
 	}
+	// close(*std_in());
 	rl_clear_history();
 }
 

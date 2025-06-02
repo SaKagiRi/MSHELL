@@ -31,7 +31,7 @@ EXPAND_FILE		= expand.c check.c clear.c expand_word.c get_t.c join_line.c
 #------------[PROCESSUTION]
 PROCESS			= $(addprefix $(PROCESS_PATH)/, $(PROCESS_FILE)) $(EXEC)
 PROCESS_PATH		= process
-PROCESS_FILE		= heredoc.c redirect.c clear.c get_t.c process.c builtin_control.c debug.c
+PROCESS_FILE		= heredoc.c redirect.c clear.c get_t.c process.c builtin_control.c debug.c utils.c
 	#------------[EXECUTION]
 	EXEC			= $(addprefix $(EXEC_PATH)/, $(EXEC_FILE))
 	EXEC_PATH		= $(PROCESS_PATH)/exec
@@ -48,10 +48,10 @@ ENV_FILE		= get_t.c env_new.c init_env.c print_env.c set_env.c add_env.c del_env
 EXIT			= $(addprefix $(EXIT_PATH)/, $(EXIT_FILE))
 EXIT_PATH		= exit
 EXIT_FILE		= exit.c get_t.c
-#------------[SIGNAL]
-SIGNAL			= $(addprefix $(SIGNAL_PATH)/, $(SIGNAL_FILE))
-SIGNAL_PATH		= signal
-SIGNAL_FILE		= sig.c
+# #------------[SIGNAL]
+# SIGNAL			= $(addprefix $(SIGNAL_PATH)/, $(SIGNAL_FILE))
+# SIGNAL_PATH		= signal
+# SIGNAL_FILE		= sig.c
 #------------[PROCESS]
 all: lib $(NAME)
 $(NAME): $(OBJ) | $(BUILD_DIR)
