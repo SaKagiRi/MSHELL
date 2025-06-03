@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 17:11:21 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/29 16:40:45 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/03 01:28:59 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ static void	fd_err(int fd_in, int fd_out, int status, t_redirect *re)
 	{
 		pnf_fd(2, "bash: %s: Permission denied\n", re->value);
 		clear_t_process();
-		exit(126);
+		exit(1);
 	}
 }
 

@@ -6,11 +6,13 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 00:37:28 by knakto            #+#    #+#             */
-/*   Updated: 2025/06/02 19:38:57 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/03 01:48:03 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "process.h"
+#include "sig.h"
+#include "signal.h"
 
 static int	len_process(void)
 {
@@ -59,6 +61,9 @@ static void	ft_wait_proc(int all_proc, pid_t last_pid)
 			*get_code() = (temp_code / 256);
 		i++;
 	}
+	check_sig_status();
+	signal(SIGINT, signal_reset_prompt);
+	signal(SIGQUIT, SIG_IGN);
 }
 
 void	process(void)
@@ -69,8 +74,7 @@ void	process(void)
 	pid_t		last_pid;
 
 	proc = *get_t_process();
-	read_all_heredoc(proc);
-	if (check_builtin(proc))
+	if (read_all_heredoc(proc) || check_builtin(proc))
 		return ;
 	all_proc = len_process();
 	last_pid = 0;

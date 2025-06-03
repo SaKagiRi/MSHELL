@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 00:49:12 by knakto            #+#    #+#             */
-/*   Updated: 2025/04/27 01:33:56 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/03 12:48:21 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ static char	*access_absolute(char *cmd, char *path)
 	int		i;
 	bool	status;
 
+	if (cmd[0] == '.' || cmd[0] == '/')
+		return (ft_strdup(cmd));
 	if (ft_strrchr(cmd, '/') != NULL)
 		cmd = ft_strrchr(cmd, '/');
 	all_path = ft_split(path, ':');

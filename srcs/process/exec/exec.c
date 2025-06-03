@@ -6,11 +6,13 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 00:21:47 by knakto            #+#    #+#             */
-/*   Updated: 2025/06/02 19:22:46 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/03 02:16:02 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "exec.h"
+#include "unistd.h"
+#include <sys/stat.h>
 
 bool	chech_eccess(char ***cmd, char *path);
 void	clear_execution_failed(char **cmd, char **env);
@@ -33,9 +35,31 @@ static char	*get_command_path(char **env)
 
 static void	trow_error(char **cmd, char **env)
 {
-	pnf_fd(2, "bash: %s: No such file or directory\n", cmd[0]);
+	if (!access(cmd[0], X_OK))
+	{
+		pnf_fd(2, "minishell: %s: Permission denied\n", cmd[0]);
+		clear_execution_failed(cmd, env);
+		exit(126);
+	}
+	if (!access(cmd[0], F_OK))
+	{
+		pnf_fd(2, "bash: %s: No such file or directory\n", cmd[0]);
+		clear_execution_failed(cmd, env);
+		exit(127);
+	}
+	pnf_fd(2, "bash: %s: command not found\n", cmd[0]);
 	clear_execution_failed(cmd, env);
 	exit(127);
+}
+
+int is_directory(const char *path) {
+    struct stat path_stat;
+
+    if (stat(path, &path_stat) != 0) {
+        // stat failed (file doesn't exist etc.)
+        return 0;
+    }
+    return S_ISDIR(path_stat.st_mode);
 }
 
 void	exec(char **cmd, char **env)
@@ -43,6 +67,13 @@ void	exec(char **cmd, char **env)
 	char	*path;
 	bool	status;
 
+	while (!cmd[0][0])
+		cmd += 1;
+	if (is_directory(cmd[0]))
+	{
+		pnf_fd(2, "minishell: %s: Is a directory\n", cmd[0]);
+		exit(126);
+	}
 	path = get_command_path(env);
 	status = chech_eccess(&cmd, path);
 	if (!status)

@@ -6,11 +6,12 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 19:17:44 by knakto            #+#    #+#             */
-/*   Updated: 2025/06/02 19:39:46 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/02 23:55:51 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "process.h"
+#include "sig.h"
 
 static int	is_builtin(t_process *proc)
 {
@@ -44,6 +45,8 @@ void	sub_fnc_process(t_process *proc, int *fd, int sw, int pipe_fd[2])
 {
 	if (proc->pid == 0)
 	{
+		signal(SIGINT, SIG_DFL);
+		signal(SIGQUIT, SIG_DFL);
 		if (*fd != -1)
 		{
 			dup2(*fd, 0);
@@ -60,5 +63,7 @@ void	sub_fnc_process(t_process *proc, int *fd, int sw, int pipe_fd[2])
 			builtin(proc);
 		exec(proc->cmd, *env());
 	}
+	signal(SIGINT, sig_handle);
+	signal(SIGQUIT, sig_handle);
 	sub_fnc_parent(fd, pipe_fd, sw);
 }
