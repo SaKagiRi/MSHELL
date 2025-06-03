@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/25 22:20:13 by knakto            #+#    #+#             */
-/*   Updated: 2025/06/02 19:32:53 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/03 01:04:52 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,13 @@ static bool	check_redirect(char *line, int *point)
 	return (false);
 }
 
+static bool	sub_fnc_syntax(void)
+{
+	pnf_fd(2, "bash: syntax error\n");
+	*get_code() = 2;
+	return (false);
+}
+
 bool	syntax(char *line)
 {
 	int		i;
@@ -97,15 +104,9 @@ bool	syntax(char *line)
 		else if (line[i] == '\"' && !s_q)
 			d_q = !d_q;
 		if (!d_q && !s_q && (!check_pipe(line, i) || !check_redirect(line, &i)))
-		{
-			pnf_fd(2, "bash: syntax error\n");
-			return (false);
-		}
+			return (sub_fnc_syntax());
 	}
 	if (s_q || d_q)
-	{
-		pnf_fd(2, "bash: syntax error\n");
-		return (false);
-	}
+		return (sub_fnc_syntax());
 	return (true);
 }
