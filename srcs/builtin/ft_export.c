@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 05:04:28 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/29 15:56:41 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/03 01:27:14 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ static bool	check(char **arg, int i)
 {
 	char	*temp;
 
-	if (ft_strchr(arg[i], '=') != NULL && ft_strlen(arg[i]) >= 3)
+	if (ft_strchr(arg[i], '=') != NULL && ft_strlen(arg[i]) >= 2)
 	{
 		temp = ft_strtrim(arg[i], "=");
 		if (!*temp)
@@ -82,7 +82,7 @@ void	ft_export(char **arg)
 	if (len_arg(arg) == 1)
 	{
 		print_env_list();
-		exit(0);
+		exit(127);
 	}
 	set_export(arg);
 }
