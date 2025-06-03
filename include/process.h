@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 18:57:58 by knakto            #+#    #+#             */
-/*   Updated: 2025/06/02 19:30:15 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/03 00:27:20 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdbool.h>
 # include <sys/wait.h>
+# include "sig.h"
 # include "env.h"
 # include "exec.h"
 # include "../lib/KML/include/kml.h"
@@ -82,7 +83,7 @@ typedef struct s_process
 t_process	**get_t_process(void);
 void		exec(char **cmd, char **env);
 void		ft_heredoc(t_redirect *redirect);
-void		read_all_heredoc(t_process *proc);
+int			read_all_heredoc(t_process *proc);
 void		check_access_file(t_redirect *re);
 void		clear_t_process(void);
 void		redirect(t_process *proc);
@@ -92,7 +93,7 @@ int			check_builtin(t_process *proc);
 void		print_proc(void);
 void		sub_fnc_process(t_process *proc, int *fd, int sw, int pipe_fd[2]);
 
-# define HEREDOC_ERR "\nbash: warning: here-document at line delimited \
+# define HEREDOC_ERR "bash: warning: here-document at line delimited \
 by end-of-file (wanted `%s')\n"
 
 #endif

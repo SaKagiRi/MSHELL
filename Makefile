@@ -48,10 +48,10 @@ ENV_FILE		= get_t.c env_new.c init_env.c print_env.c set_env.c add_env.c del_env
 EXIT			= $(addprefix $(EXIT_PATH)/, $(EXIT_FILE))
 EXIT_PATH		= exit
 EXIT_FILE		= exit.c get_t.c
-# #------------[SIGNAL]
-# SIGNAL			= $(addprefix $(SIGNAL_PATH)/, $(SIGNAL_FILE))
-# SIGNAL_PATH		= signal
-# SIGNAL_FILE		= sig.c
+#------------[SIGNAL]
+SIGNAL			= $(addprefix $(SIGNAL_PATH)/, $(SIGNAL_FILE))
+SIGNAL_PATH		= signal
+SIGNAL_FILE		= sig.c get_t.c sig_heredoc.c
 #------------[PROCESS]
 all: lib $(NAME)
 $(NAME): $(OBJ) | $(BUILD_DIR)

@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 18:57:58 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/25 20:49:12 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/03 02:06:17 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ execute function
     and last exit at 127 exit code.
 */
 void		exec(char **cmd, char **env);
+int			*get_access(void);
 
 #endif
