@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 02:39:10 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/28 17:58:12 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/03 15:00:55 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,24 @@
 
 static t_env	*get_node(char **env, int i)
 {
-	char	**temp;
+	char	*key;
+	char	*value;
 	char	*temp_1;
 	t_env	*node;
+	int		j;
 
 	node = NULL;
 	if (ft_strchr(env[i], '=') == NULL)
 		node = new_env(env[i], NULL);
 	else
 	{
-		temp = ft_split(env[i], '=');
-		if (ft_strchr(temp[0], '=') != NULL)
-		{
-			temp_1 = ft_substr(temp[0], 0, ft_strlen(temp[0]) - 1);
-			node = new_env(temp_1, "");
-			free(temp_1);
-		}
-		else
-			node = new_env(temp[0], temp[1]);
-		free_split(temp);
+		j = 0;
+		while (env[i][j] != '=')
+			j++;
+		key = ft_substr(env[i], 0, j);
+		value = ft_strchr(env[i], '=') + 1;
+		node = new_env(key, value);
+		free(key);
 	}
 	return (node);
 }
