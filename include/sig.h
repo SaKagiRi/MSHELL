@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 22:34:19 by knakto            #+#    #+#             */
-/*   Updated: 2025/06/03 00:43:45 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/03 18:56:09 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 # include <readline/readline.h>
 
 int		*sig_status(void);
-void	sig_prompt();
 void	signal_print_newline(int signal);
 void	signal_reset_prompt(int signo);
 void	sig_handle(int sig);

@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 00:21:47 by knakto            #+#    #+#             */
-/*   Updated: 2025/06/03 02:16:02 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/03 18:57:50 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,14 +52,13 @@ static void	trow_error(char **cmd, char **env)
 	exit(127);
 }
 
-int is_directory(const char *path) {
-    struct stat path_stat;
+int	is_directory(const char *path)
+{
+	struct stat	path_stat;
 
-    if (stat(path, &path_stat) != 0) {
-        // stat failed (file doesn't exist etc.)
-        return 0;
-    }
-    return S_ISDIR(path_stat.st_mode);
+	if (stat(path, &path_stat) != 0)
+		return (0);
+	return (S_ISDIR(path_stat.st_mode));
 }
 
 void	exec(char **cmd, char **env)

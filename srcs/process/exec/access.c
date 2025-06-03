@@ -6,17 +6,24 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 00:49:12 by knakto            #+#    #+#             */
-/*   Updated: 2025/06/03 12:48:21 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/03 18:55:41 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "exec.h"
+#include "process.h"
 
 static bool	access_relative(char *cmd)
 {
 	if (!access(cmd, X_OK | F_OK))
 		return (true);
 	return (false);
+}
+
+static void	sub_fnc_access(char **temp, char **all_path, int i, char *cmd)
+{
+	*temp = ft_strjoin(all_path[i], "/");
+	*temp = fjoin(*temp, cmd);
 }
 
 static char	*access_absolute(char *cmd, char *path)
@@ -35,8 +42,7 @@ static char	*access_absolute(char *cmd, char *path)
 	status = false;
 	while (all_path[i] && !status)
 	{
-		temp = ft_strjoin(all_path[i], "/");
-		temp = fjoin(temp, cmd);
+		sub_fnc_access(&temp, all_path, i, cmd);
 		if (!access(temp, X_OK | F_OK))
 			status = true;
 		else
