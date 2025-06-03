@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 19:22:21 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/29 16:05:33 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/03 12:55:11 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,12 +96,20 @@ static void	change_dir(char **arg)
 
 void	ft_chdir(char **arg)
 {
+	char	thispath[1024];
+
 	if (len_arg(arg) == 1)
 		go_to_home();
 	else if (len_arg(arg) > 2)
 	{
 		pnf_fd(2, "bash: cd: too many arguments\n");
 		*get_code() = 1;
+	}
+	else if (!ft_strncmp(arg[1], "-", 1))
+	{
+		if (!getcwd(thispath, sizeof(thispath)))
+			return ;
+		pnf("%s\n", thispath);
 	}
 	else
 		change_dir(arg);
