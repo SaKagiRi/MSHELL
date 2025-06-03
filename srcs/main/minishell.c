@@ -6,7 +6,7 @@
 /*   By: gyeepach <gyeepach@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/06 06:01:47 by knakto            #+#    #+#             */
-/*   Updated: 2025/06/02 19:44:21 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/03 01:36:33 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,19 +18,25 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <strings.h>
+#include "exit.h"
 #include "parser.h"
+#include "sig.h"
 
 void	prompt(void)
 {
 	char	*line;
+	char	*temp;
 
 	while (is_exit(0))
 	{
 		dup2(*std_in(), 0);
-		line = readline("minishell> ");
-		if (!line)
+		temp = readline("minishell> ");
+		if (!temp)
 			break ;
-		add_history(line);
+		line = ft_strtrim(temp, "\n");
+		free(temp);
+		if (*line)
+			add_history(line);
 		if (parser(line))
 			process();
 		clear_t_process();
@@ -61,7 +67,9 @@ int	main(int c, char **v, char **envp)
 	char	*line;
 
 	init_env(envp);
+	signal(SIGQUIT, SIG_IGN);
+	signal(SIGINT, signal_reset_prompt);
 	prompt();
 	clear_env();
-	return (0);
+	return (*get_code());
 }
