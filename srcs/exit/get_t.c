@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 21:41:35 by knakto            #+#    #+#             */
-/*   Updated: 2025/06/02 18:54:47 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/02 20:19:12 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ int	*std_in(void)
 	static int	fd = -10;
 
 	if (fd == -10)
-		fd = dup(1);
+		fd = dup(0);
 	return (&fd);
 }
