@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 05:04:28 by knakto            #+#    #+#             */
-/*   Updated: 2025/06/03 01:27:14 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/28 18:38:29 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ void	set_export(char **arg)
 			if (ft_strchr(temp[0], '=') != NULL)
 			{
 				sub = ft_substr(temp[0], 0, ft_strlen(arg[i]) - 1);
-				add_env(sub, "");
+				check_before_add_env(sub, "");
 				free(sub);
 			}
 			else
