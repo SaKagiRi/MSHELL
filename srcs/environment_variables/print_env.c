@@ -6,7 +6,7 @@
 /*   By: knakto <knakto@student.42bangkok.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 03:03:40 by knakto            #+#    #+#             */
-/*   Updated: 2025/05/29 14:41:05 by knakto           ###   ########.fr       */
+/*   Updated: 2025/06/28 18:45:37 by knakto           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static void	sub_fnc(t_env *low, int *i)
 	if (low->value)
 	{
 		if (!*low->value)
-			pnf("declare -x %s=\n", low->key);
+			pnf("declare -x %s=\"\"\n", low->key);
 		else
 			pnf("declare -x %s=\"%s\"\n", low->key, low->value);
 	}
